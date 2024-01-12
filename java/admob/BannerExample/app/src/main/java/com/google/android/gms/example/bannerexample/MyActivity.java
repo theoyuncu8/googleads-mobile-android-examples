@@ -140,10 +140,10 @@ public class MyActivity extends AppCompatActivity {
   /** Called when leaving the activity */
   @Override
   public void onPause() {
+    super.onPause();
     if (adView != null) {
       adView.pause();
     }
-    super.onPause();
   }
 
   /** Called when returning to the activity */
@@ -158,10 +158,10 @@ public class MyActivity extends AppCompatActivity {
   /** Called before the activity is destroyed */
   @Override
   public void onDestroy() {
+    super.onDestroy();
     if (adView != null) {
       adView.destroy();
     }
-    super.onDestroy();
   }
 
   private void loadBanner() {
